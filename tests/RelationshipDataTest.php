@@ -75,6 +75,6 @@ class RelationshipDataTest extends TestCase
         $returnedData = $this->obj->toArray();
 
         $this->assertIsArray($returnedData);
-        $this->assertCount(7, $returnedData);
+        $this->assertCount(9, $returnedData);
     }
 }
