@@ -21,8 +21,8 @@ class RelationshipDataTransferObjectTest extends TestCase
             'test' => 'Test',
             'relationships' => [
                 [
-                    'localModel' => Model::class,
-                    'foreignModel' => Model::class,
+                    'localClass' => Model::class,
+                    'foreignClass' => Model::class,
                     'type' => BelongsTo::class,
                     'localRelationshipName' => 'relationship',
                     'foreignRelatedFieldName' => 'id',
@@ -30,8 +30,8 @@ class RelationshipDataTransferObjectTest extends TestCase
                     'foreignKey' => 10,
                 ],
                 [
-                    'localModel' => Model::class,
-                    'foreignModel' => Model::class,
+                    'localClass' => Model::class,
+                    'foreignClass' => Model::class,
                     'type' => BelongsToMany::class,
                     'localRelationshipName' => 'manyToMany',
                     'foreignRelatedFieldName' => 'id',

@@ -11,7 +11,7 @@ class RelationshipData extends DataTransferObject
     public string $type;
     public string $localRelationshipName;
     public string $foreignRelatedFieldName;
-    public int $localKey;
+    public ?int $localKey;
     public ?int $foreignKey;
     public ?array $foreignKeys;
     public ?array $pivot;
