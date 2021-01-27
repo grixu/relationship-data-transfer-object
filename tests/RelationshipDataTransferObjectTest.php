@@ -6,7 +6,7 @@ use Grixu\RelationshipDataTransferObject\RelationshipDataCollection;
 use Grixu\RelationshipDataTransferObject\RelationshipDataTransferObject;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use PHPUnit\Framework\TestCase;
 
 class RelationshipDataTransferObjectTest extends TestCase
@@ -24,13 +24,17 @@ class RelationshipDataTransferObjectTest extends TestCase
                     'localModel' => Model::class,
                     'foreignModel' => Model::class,
                     'type' => BelongsTo::class,
+                    'localRelationshipName' => 'relationship',
+                    'foreignRelatedFieldName' => 'id',
                     'localKey' => 1,
                     'foreignKey' => 10,
                 ],
                 [
                     'localModel' => Model::class,
                     'foreignModel' => Model::class,
-                    'type' => HasMany::class,
+                    'type' => BelongsToMany::class,
+                    'localRelationshipName' => 'manyToMany',
+                    'foreignRelatedFieldName' => 'id',
                     'localKey' => 2,
                     'foreignKey' => 4
                 ]

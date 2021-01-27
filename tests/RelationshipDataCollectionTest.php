@@ -21,6 +21,8 @@ class RelationshipDataCollectionTest extends TestCase
                 [
                     'localModel' => Model::class,
                     'foreignModel' => Model::class,
+                    'localRelationshipName' => 'relationship',
+                    'foreignRelatedFieldName' => 'id',
                     'type' => BelongsTo::class,
                     'localKey' => 1,
                     'foreignKey' => 10,
@@ -28,6 +30,8 @@ class RelationshipDataCollectionTest extends TestCase
                 [
                     'localModel' => Model::class,
                     'foreignModel' => Model::class,
+                    'localRelationshipName' => 'relationship',
+                    'foreignRelatedFieldName' => 'id',
                     'type' => HasMany::class,
                     'localKey' => 2,
                     'foreignKey' => 4

@@ -32,6 +32,8 @@ class RelationshipDataTest extends TestCase
                 'type' => BelongsTo::class,
                 'localClass' => Model::class,
                 'foreignClass' => Model::class,
+                'localRelationshipName' => 'relationship',
+                'foreignRelatedFieldName' => 'id',
                 'localKey' => 1,
                 'foreignKey' => 10
             ]
@@ -58,6 +60,8 @@ class RelationshipDataTest extends TestCase
                 'type' => BelongsToMany::class,
                 'localClass' => Model::class,
                 'foreignClass' => Model::class,
+                'localRelationshipName' => 'manyToMany',
+                'foreignRelatedFieldName' => 'id',
                 'localKey' => 1,
                 'foreignKeys' => [2, 3, 4, 5]
             ]
