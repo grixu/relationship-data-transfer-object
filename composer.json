@@ -1,0 +1,44 @@
+{
+    "name": "grixu/relationship-data-transfer-object",
+    "description": "Simple class for wrapping data with relationships. But without those meta-data when dump DTO to Array",
+    "keywords": [
+        "grixu",
+        "relationship-data-transfer-object"
+    ],
+    "homepage": "https://github.com/grixu/relationship-data-transfer-object",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Mateusz Gostański",
+            "email": "mg@grixu.dev",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "spatie/data-transfer-object": "^2.7.0",
+        "illuminate/support": "^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "illuminate/database": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Grixu\\RelationshipDataTransferObject\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Grixu\\RelationshipDataTransferObject\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
