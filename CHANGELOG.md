@@ -2,6 +2,10 @@
 
 All notable changes to `relationship-data-transfer-object` will be documented in this file
 
+## 1.1.2 - 2021-01-27
+
+- Test fixed
+
 ## 1.1.1 - 2021-01-27
 
 - Bug fixed - I'm so ashamed of it, so please read forward
