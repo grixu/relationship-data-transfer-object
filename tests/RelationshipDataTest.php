@@ -6,7 +6,6 @@ use Grixu\RelationshipDataTransferObject\RelationshipData;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-use PHPUnit\Framework\TestCase;
 
 class RelationshipDataTest extends TestCase
 {

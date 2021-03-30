@@ -6,7 +6,6 @@ use Grixu\RelationshipDataTransferObject\RelationshipDataCollection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
-use PHPUnit\Framework\TestCase;
 
 class RelationshipDataCollectionTest extends TestCase
 {
@@ -16,20 +15,20 @@ class RelationshipDataCollectionTest extends TestCase
     {
         parent::setUp();
 
-        $this->obj = new RelationshipDataCollection(
+        $this->obj = RelationshipDataCollection::create(
             [
                 [
-                    'localModel' => Model::class,
-                    'foreignModel' => Model::class,
+                    'localClass' => Model::class,
+                    'foreignClass' => Model::class,
+                    'type' => BelongsTo::class,
                     'localRelationshipName' => 'relationship',
                     'foreignRelatedFieldName' => 'id',
-                    'type' => BelongsTo::class,
                     'localKey' => 1,
                     'foreignKey' => 10,
                 ],
                 [
-                    'localModel' => Model::class,
-                    'foreignModel' => Model::class,
+                    'localClass' => Model::class,
+                    'foreignClass' => Model::class,
                     'localRelationshipName' => 'relationship',
                     'foreignRelatedFieldName' => 'id',
                     'type' => HasMany::class,
