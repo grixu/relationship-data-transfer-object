@@ -53,13 +53,6 @@ class RelationshipDataTransferObjectTest extends TestCase
     }
 
     /** @test */
-    public function it_dumps_array_without_relationship()
-    {
-        $returnedData = $this->obj->toArray();
-        $this->assertCount(1, $returnedData);
-    }
-
-    /** @test */
     public function it_have_access_to_relationships()
     {
         $this->assertEquals(RelationshipDataCollection::class, get_class($this->obj->relationships));
