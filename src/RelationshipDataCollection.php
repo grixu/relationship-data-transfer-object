@@ -2,17 +2,17 @@
 
 namespace Grixu\RelationshipDataTransferObject;
 
-use Spatie\DataTransferObject\DataTransferObjectCollection;
+use Illuminate\Support\Collection;
 
-class RelationshipDataCollection extends DataTransferObjectCollection
+class RelationshipDataCollection extends Collection
 {
     public static function create(array $data): RelationshipDataCollection
     {
         return new static(RelationshipData::arrayOf($data));
     }
 
-    public function current(): RelationshipData
+    public function offsetGet($key): RelationshipData
     {
-        return parent::current();
+        return parent::offsetGet($key);
     }
 }
