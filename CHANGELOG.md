@@ -2,6 +2,10 @@
 
 All notable changes to `relationship-data-transfer-object` will be documented in this file
 
+## 1.1.5 - 2021-04-30
+
+- Bug fixed
+
 ## 1.1.4 - 2021-03-30
 
 - Bug fixed: now automatically convert array to `RelationshipData` in Collection
